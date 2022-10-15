@@ -37,6 +37,7 @@ public class AlumnoController extends HttpServlet {
                request.setAttribute("success", 0);
                 request.getRequestDispatcher("/index.jsp").forward(request, response);
            }else{
+               request.setAttribute("UsuarioLogueado", request.getSession().getAttribute("user"));
                request.getRequestDispatcher("home.jsp").forward(request, response);
            }
            

@@ -20,7 +20,7 @@
             <br>
            <div class="container">
                <c:if test="${success ==0}">
-                    <div class="alert alert-danger" id="error">Usuario o Contraseña Incorrecto</div>
+                    <div class="alert alert-danger" id="error">${mensaje}</div>
                 </c:if>
             <h1>Ejemplo de Inicio de sesión</h1>
             <form action="NewServlet" method="POST">

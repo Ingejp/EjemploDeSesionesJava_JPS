@@ -20,9 +20,6 @@
     <body>
         <h1>MENU</h1>
         
-        <a href="Logout">Cerrar Sesion</a>
-            <div class="alert alert-danger" id="error">
-                <%request.getSession().getAttribute("user");%>
-            </div>
+        <a href="Logout">Cerrar Sesion - ${UsuarioLogueado}</a>
     </body>
 </html>
