@@ -26,9 +26,7 @@ public class Usuario {
     }
     
     public String validarUsuario(String user, String pass){
-        //SE VALIDA EL USUARIO EN LA BD
         String sql = "SELECT * FROM usuario WHERE usuario = '" + user + "' AND contrasenia = '"+pass+"'";
-       // return "JP";
         try{
             this.conexion = this.conectorBD.conectar();
             this.statement = conexion.prepareStatement(sql);
