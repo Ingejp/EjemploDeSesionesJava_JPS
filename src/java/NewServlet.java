@@ -50,7 +50,7 @@ public class NewServlet extends HttpServlet {
                 response.sendRedirect(request.getContextPath()+"/AlumnoController");              
             }else{
                 request.setAttribute("success", 0);
-                request.setAttribute("mensaje", usuarioConsultado);
+                request.setAttribute("mensaje", "Usuario y/o contraseña no encontrado");
                 request.getRequestDispatcher("/index.jsp").forward(request, response);
             }            
         }
